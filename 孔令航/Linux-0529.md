@@ -50,9 +50,16 @@
 	# Edit this file to introduce tasks to be run by cron.
 	...
 	# m h  dom mon dow   command
-	*/1 * * * * touch /home/shiyanlou/$(date +\%Y\%m\%d\%H\%M\&S)
+	*/1 * * * * touch /home/shiyanlou/$(date +\%Y\%m\%d\%H\%M\&S)  
+
 > 注意：此处学习时，错将M和D写为大写字母，这种错误以后会小心避免  
-> 之前的5个*号位置依次对应：{minute} {hour} {day-of-month} {month} {day-of-week} 后面的部分是可执行的{full-path-to-shell-script} 
+> 之前的5个*号位置依次对应：
+> {minute}:0-59,每分钟对应\*或、\*/1  
+> {hour}:0-23  
+> {day-of-month}：1-31  
+> {month}：1-12    
+> {day-of-week}：0-6，SUN-0    
+> 后面的部分是可执行的{full-path-to-shell-script} 
 
 ### 判断添加任务是否成功-方法1  
 > ps aux | grep cron
