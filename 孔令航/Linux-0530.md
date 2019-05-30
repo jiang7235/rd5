@@ -172,12 +172,12 @@
 7. -t  ：分隔符，默认是用 [tab] 键来分隔；
 8. -k  ：以那个区间 (field) 来进行排序的意思
 
-	shiyanlou:~/ $ cat /etc/passwd | sort -t':' -k 3 -n 
-	root:x:0:0:root:/root:/bin/bash  
+	`shiyanlou:~/ $ cat /etc/passwd | sort -t':' -k 3 -n`  
+	`root:x:0:0:root:/root:/bin/bash`  
 ****  
 ## uniq命令  
 > 用于过滤或者输出重复行  
-	shiyanlou:~/ $ history | cut -c 8- | cut -d ' ' -f 1 | uniq [16:38:37]
+	shiyanlou:~/ $ history | cut -c 8- | cut -d ' ' -f 1 | uniq  
 	history  
 ****  
 ## 小结  
